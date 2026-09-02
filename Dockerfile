@@ -5,9 +5,11 @@ WORKDIR /app
 COPY . .
 
 RUN apk update
-RUN apk add python3 py3-pip alpine-sdk openssl-dev build-base python3-dev
+RUN apk add python3 py3-pip alpine-sdk openssl-dev build-base python3-dev git
 RUN python3 -m pip install setuptools --break-system-packages
 RUN cp -n config.example.toml config.toml
+RUN rm -rf workerware
+RUN git clone --depth 1 https://github.com/mercuryworkshop/workerware.git workerware
 RUN rm -f pnpm-workspace.yaml
 RUN npm i -g pnpm@9
 RUN pnpm install
