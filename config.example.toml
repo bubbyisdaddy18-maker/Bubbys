@@ -5,7 +5,7 @@ level = 1
 
 [seo]
 enabled = false
-domain = "https://nebulaproxy.io"
+domain = "https://MathStudy.Dev"
 
 [db]
 name = "database" # Your database name
@@ -14,7 +14,7 @@ password = "password" # The password to your DB (SQLITE ignores this)
 postgres = false # Enable to use postgres over sqlite (recommended for large prod instances)
 
 [postgres] # Set the "domain" to either and ip address or a actual domain 
-domain = ""
+domain = "https://MathStudy.Dev"
 port = 5432
 
 [server.server]
