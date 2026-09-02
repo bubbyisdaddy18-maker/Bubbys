@@ -1,9 +1,9 @@
 packages:
- -'.'
+  - "."
 
 onlyBuiltDependencies:
-  - '@biomejs/biome'
-  - '@mercuryworkshop/scramjet'
+  - "@biomejs/biome"
+  - "@mercuryworkshop/scramjet"
   - bufferutil
   - esbuild
   - sharp
